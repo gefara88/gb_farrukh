@@ -1,0 +1,10 @@
+print("Задача 6")
+print("Достяжение цели")
+print("введите сколько километров спортсмен пробежал в первый день?")
+length = float(input(""))
+print("цель спортсмена при условии что он увеличивает свой результат каждый день на 10%")
+final = float(input(""))
+print("# день " + f"{length:0.2f}" + " км")
+while length <= final:
+    length = length + (length * 0.1)
+    print("# день " + f"{length:0.2f}" + " км")
